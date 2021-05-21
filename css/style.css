@@ -1,7 +1,7 @@
 body{
     background: rgb(236,255,188);
-background: linear-gradient(90deg, rgba(236,255,188,1) 0%, rgba(193,255,190,1) 50%, rgba(154,186,175,1) 100%);
-}
+    background: linear-gradient(90deg, rgba(236,255,188,1) 0%, rgba(193,255,190,1) 50%, rgba(154,186,175,1) 100%);
+    }
 .menu{
     position: relative;
     margin-left: auto;
@@ -46,6 +46,8 @@ a:hover{
     margin-right: auto;
     width: 40%;
     box-shadow: 10px 10px 1px #E6E8EB;
+    animation-name: animacion;
+    animation-duration: 1s;
 }
 .EfectoC{
     position: relative;
@@ -53,6 +55,8 @@ a:hover{
     text-align: center;
     left: 535px;
     top: 100px;
+    animation-name: animacion;
+    animation-duration: 1s;
 }
 .image1{
     width: 400px;
@@ -62,6 +66,8 @@ a:hover{
     margin-top: 30px;
     padding-right: 25px;
     padding-top: 15px;
+    animation-name: animacion;
+    animation-duration: 1s;
 }
 .image2{
     width: 000px;
@@ -71,6 +77,8 @@ a:hover{
     margin-top: 30px;
     padding-right: 25px;
     padding-top: 15px;
+    animation-name: animacion;
+    animation-duration: 1s;
 }
 .subtitulo{
     padding-top: 10px;
@@ -78,6 +86,8 @@ a:hover{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 30px;
     font-weight: bold;
+    animation-name: animacion;
+    animation-duration: 1s;
     
 }
 .subtituloc{
@@ -88,6 +98,8 @@ a:hover{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 30px;
     font-weight: bold;
+    animation-name: animacion;
+    animation-duration: 1s;
 }
 .parrafo{
     padding-top: 15px;
@@ -97,6 +109,8 @@ a:hover{
     font-weight: normal;
     font-size: 25px;
     text-align: justify;
+    animation-name: animacion;
+    animation-duration: 1s;
 }
 .miniback{
     margin-top: 30px;
@@ -116,6 +130,8 @@ a:hover{
     font-size: 25px;
     text-align: center;
     opacity: 250%;
+    animation-name: animacion;
+    animation-duration: 1s;
 }
 .form{
     padding-top: 15px;
@@ -207,17 +223,57 @@ footer{
     text-align: center;
     color: white;
     text-shadow: 1px 1px 30px #E6E8EB;
-
+}
+.visione{
+    margin-top: 25px;
+    padding-bottom: 15px;
+    margin-right: 1%;
+    margin-left: 1%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 30px #E6E8EB;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+/*animacion entrar*/
+@keyframes animacion{
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .formbackc:hover{
     transform: scale(0.7);
     background: rgb(0,255,30);
-background: linear-gradient(90deg, rgba(0,255,30,1) 0%, rgba(83,186,170,1) 100%);
+    background: linear-gradient(90deg, rgba(0,255,30,1) 0%, rgba(83,186,170,1) 100%);
 
 }
-.visionc:hover{
-
+input, textarea{
+    border-radius: 30px;
+    border: 2px solid #434738;
+    background: rgba(255, 255, 255, 0.5);
 }
-
-
-
+textarea{
+    padding-top: 15px;
+    padding-right: 25px;
+    text-align: center;
+}
+input{
+    padding-right: 25px;
+    padding-left: 15px;
+}
+.boton{
+    background: #6cfa4b;
+    color: black;
+}
+.boton:hover{
+    transform: scale(1.1);
+}
